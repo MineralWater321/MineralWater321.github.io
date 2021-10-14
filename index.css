@@ -1,0 +1,23 @@
+/*CSS Reset*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif !important;
+}
+
+.navigat {
+	background-color: #1D3557 !important;
+	color: white !important;
+}
+
+.firstSect {
+	background-color: #457B9D;
+}
+
+a:link {
+	text-decoration: none !important;
+}
