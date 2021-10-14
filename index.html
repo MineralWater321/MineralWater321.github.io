@@ -18,7 +18,7 @@
 </head>
 <body>
 	<!-- Navigation & Title -->
-	<nav class="navbar navbar-expand-lg navbar-dark navigat text-light">
+	<nav class="navbar navbar-expand-lg navbar-dark navigat text-light fixed-top">
 	  <a class="navbar-brand" href="#">Edward Paler</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -61,19 +61,19 @@
 
      </div>
 
-	<!-- About Me Section -->
-	<section id="aboutMe" class="firstSect text-light text-center vh-100">
+	<!-- About Me Section Start-->
+	<section id="aboutMe" class="firstSect text-light text-center vh-100 mt-5">
 		<div class="p-5"  >
 			<img src="./images/aboutMe.png" class="rounded-circle img-fluid" width="300">
-			<h2>Edward Christopher Paler</h2>
-			<h2><a href="#contactMe" class="text-light">(@MineralWater)</a></h2>
+			<h2 class="border-bottom border-white">Edward Christopher Paler</h2>
 			<h4>Full-Stack Developer</h4>
 			<p>Electronics Engineering graduate pursuing a career in Software Development. Loves to read translated novels. Has two dogs. </p>
 		</div>
 	</section>
+	<!-- About Me Section End -->
 
-	<!-- Project Section -->
-	<section id="project" class="secondSect text-dark text-center">
+	<!-- Project Section Start-->
+	<section id="project" class="secondSect text-dark text-center min-vh-100 pt-5">
 		<div class="p-5"  >
 			<h2>Projects</h2>
 			<div class="card-group">
@@ -107,10 +107,73 @@
 			</div>
 		</div>
 	</section>
+	<!-- Project Section End-->
 
-	<!-- contactMe Section -->
+	<!-- Contact Me Section Start -->
 	<section id="contactMe">
-		
+		<div class="thirdSect container-fluid min-vh-100 p-md-5" id="contacts">
+			<div class="row justify-content-center">
+				<div class="col-12 col-md-8 col-xl-4">
+					<h2 class="mb-3">Contact Me</h2>
+
+					<form class="bg-primary p-5">
+					  <div class="form-group">
+					      <label for="formName">Name</label>
+					      <input type="text" class="form-control" id="formName" placeholder="Your Name">
+					   </div>
+
+					  <div class="form-group">
+					    <label for="formEmail">Email address</label>
+					    <input type="email" class="form-control" id="formEmail" placeholder="name@example.com">
+					  </div>
+
+					   <div class="form-group">
+					      <label for="formContact">Contact Number</label>
+					      <input type="number" class="form-control" id="formContact" placeholder="+63 900 000 0000">
+					   </div>
+
+					   <div class="form-group">
+					       <label for="formConcern">Concern</label>
+					       <select class="form-control" id="formConcern">
+					         <option>Quotation</option>
+					         <option>Appointment</option>
+					         <option>Follow-up</option>
+					       </select>
+					     </div>					  
+
+					  <div class="form-group">
+					    <label for="formMessage">Message</label>
+					    <textarea class="form-control" id="formMessage" rows="3"></textarea>
+					  </div>
+
+					  <!-- Button trigger modal -->
+					  <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#sendEmail">
+					    Send Email
+					  </button>
+
+					  <!-- Modal -->
+					  <div class="modal fade text-dark" id="sendEmail" tabindex="-1" aria-labelledby="thanks" aria-hidden="true">
+					    <div class="modal-dialog">
+					      <div class="modal-content">
+					        <div class="modal-header">
+					          <h5 class="modal-title" id="thanks">Thank you for contacting us!</h5>
+					          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					            <span aria-hidden="true">&times;</span>
+					          </button>
+					        </div>
+					        <div class="modal-body">
+					          Message Successfully Sent
+					        </div>
+					        <div class="modal-footer">
+					          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					        </div>
+					      </div>
+					    </div>
+					  </div>		
+					</form>					
+				</div>				
+			</div>							
+		</div>
 	</section>
 
 

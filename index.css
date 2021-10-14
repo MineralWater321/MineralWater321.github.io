@@ -27,6 +27,11 @@ body {
 	color: #457B9D !important;
 }
 
+.thirdSect {
+	background-color: #f1faee;
+	color: black !important;
+}
+
 a:link {
 	text-decoration: none !important;
 }
