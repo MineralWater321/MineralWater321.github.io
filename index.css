@@ -32,16 +32,21 @@ body {
 	color: black !important;
 }
 
+.contactForm {
+	background-color: #a8dadc;
+}
+
 a:link {
 	text-decoration: none !important;
 }
 
-.socials {
+.sideBar {
   display: flex;
   flex-direction: column;
   position: fixed;
   right: 1%;
   bottom: 50%;
+  z-index: 500;
 }
 
 .socicon {
