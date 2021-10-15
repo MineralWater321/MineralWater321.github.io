@@ -5,6 +5,10 @@
 	box-sizing: border-box;
 	font-family: 'Lato', sans-serif !important;
 }
+
+html {
+	scroll-behavior: smooth;
+}
 p {
 	font-size: 20px;
 }
