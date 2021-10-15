@@ -3,14 +3,10 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Lato', sans-serif !important;
 }
-
 p {
 	font-size: 20px;
-}
-
-body {
-	font-family: 'Lato', sans-serif !important;
 }
 
 .navigat {
@@ -30,19 +26,27 @@ body {
 .thirdSect {
 	background-color: #f1faee;
 	color: black !important;
+	min-height: calc(100vh - 30px);
 }
 
 .contactForm {
 	background-color: #a8dadc;
 }
 
+.footer {
+	background-color: #1D3557 !important;
+	position: static;
+	bottom: 0;
+	height: 30px;
+	width: 100%;
+	color: white;
+}
 a:link {
 	text-decoration: none !important;
+	color: white !important;
 }
 
 .sideBar {
-  display: flex;
-  flex-direction: column;
   position: fixed;
   right: 1%;
   bottom: 50%;
